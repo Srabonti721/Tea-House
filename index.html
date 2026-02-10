@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- tailwind css -->
-     <script src="https://cdn.tailwindcss.com"></script>
-       <script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -22,44 +22,92 @@
       }
     }
   </script>
-     <!-- fontAwesome -->
-      <script src="https://kit.fontawesome.com/7e564616ca.js" crossorigin="anonymous"></script>
-    <style>
-        .manrope-font {
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
+  <!-- fontAwesome -->
+  <script src="https://kit.fontawesome.com/7e564616ca.js" crossorigin="anonymous"></script>
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
+
 <body class="manrope-font">
   <!-- main contant -->
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-      <!-- header section -->
-       <header class="flex pt-10 mb-20">
-        <!-- text-container -->
+  <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+    <!-- header section -->
+    <header class="flex pt-10 mb-20">
+      <!-- text-container -->
+      <div>
+        <h3 class="text-2xl md:text-6xl font-bold text-[#1C1C1C]">It's good <br> tea time at The <br>Tea House</h3>
+        <br>
+        <p class="text-sm font-medium text-[#777777] w-3/4">Tea and Botanical Solutions Supplier Give Optimum
+          Satisfaction To Your Taste Buds.</p>
+        <br>
+        <button
+          class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-4 px-5 rounded-lg font-bold text-xl">Explore
+          More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+      </div>
+      <!-- image container -->
+      <div class="relative">
+        <!-- image -->
         <div>
-            <h3 class="text-2xl md:text-6xl font-bold text-[#1C1C1C]">It's good <br> tea time at The <br>Tea House</h3>
-            <br>
-            <p class="text-sm font-medium text-[#777777] w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-            <br>
-            <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-4 px-5 rounded-lg font-bold text-xl">Explore More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+          <img class="w-full" src="images/banner.png" alt="">
         </div>
-        <!-- image container -->
-         <div class="relative">
-          <!-- image -->
-          <div>
-            <img class="w-full" src="images/banner.png" alt="">
+        <!-- card container -->
+        <div
+          class=" absolute flex items-center bg-white shadow-lg rounded-lg px-2 py-2 md:py-4 lg:px-10 top-28  md:top-80 md:left-32 lg:left-28">
+          <div><i class="fa-solid fa-star text-2xl text-amber-400"></i></div>
+          <div class="ml-2">
+            <h2 class="font-extrabold text-3xl text-[#1C1C1C]">5.00</h2>
+            <p class="font-semibold text-[#777777] text-base">Trust Pilot Ratings</p>
           </div>
-          <!-- card container -->
-          <div class=" absolute flex items-center bg-white shadow-lg rounded-lg px-2 py-2 md:py-4 lg:px-10 top-28  md:top-80 md:left-32 lg:left-28">
-            <div><i class="fa-solid fa-star text-2xl text-amber-400"></i></div>
-            <div class="ml-2">
-              <h2 class="font-extrabold text-3xl text-[#1C1C1C]">5.00</h2>
-              <p class="font-semibold text-[#777777] text-base">Trust Pilot Ratings</p>
-            </div>
+        </div>
+      </div>
+    </header>
+    <!-- featured product section -->
+    <section class="py-8 md:py-24">
+      <div class="text-center mb-4">
+        <h1 class="text-[#1C1C1C] font-extrabold text-3xl md:text-4xl mb-4">Our Featured Products</h1>
+        <p class="taxt-[#777777] text-sm font-medium max-w-xl mx-auto">There are many variations of passages of Lorem
+          Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+          words which don't look even slightly believable. </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-6 ">
+        <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img class="mx-auto pt-4" src="images/tea-1.png" alt="">
+          <!-- card -->
+          <div class="p-4">
+            <h2 class="font-extrabold text-2xl text-[#1C1C1C]">Milk Tea</h2>
+            <p class="text-[#777777] font-semibold">Creamer could be replaced by fresh milk</p>
           </div>
-         </div>
-       </header>
-    </main>
+        </div>
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img class="mx-auto pt-4" src="images/tea-2.png" alt="">
+          <!-- card -->
+          <div class="p-4">
+            <h2 class="font-extrabold text-2xl text-[#1C1C1C]">Lemon Tea</h2>
+            <p class="text-[#777777] font-semibold">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img class="mx-auto pt-4" src="images/tea-3.png" alt="">
+          <!-- card -->
+          <div class="p-4">
+            <h2 class="font-extrabold text-2xl text-[#1C1C1C]">Green Tea</h2>
+            <p class="text-[#777777] font-semibold">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <img class="mx-auto pt-4" src="images/tea-4.png" alt="">
+          <!-- card -->
+          <div class="p-4">
+            <h2 class="font-extrabold text-2xl text-[#1C1C1C]">Green Tea</h2>
+            <p class="text-[#777777] font-semibold">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
